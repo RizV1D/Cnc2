@@ -7,9 +7,9 @@ const port = 8080;
 // Daftar metode dan skrip terkait
 const scripts = {
     tls: 'TLS-PRV.js',
-    aot: 'HTTPS2.js',  // Menambahkan metode 'aot' dengan skrip 'AOT.js'
-    mix: 'BYPASS2.js',
-    flood: 'TLS-SILIT.js'
+    https: 'HTTPS2.js',  // Menambahkan metode 'aot' dengan skrip 'AOT.js'
+    bypass: 'BYPASS2.js',
+    silit: 'TLS-SILIT.js'
 };
 
 app.get('/api', (req, res) => {
