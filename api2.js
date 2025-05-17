@@ -2,7 +2,7 @@ const express = require('express');
 const { exec } = require('child_process');
 const path = require('path');
 const app = express();
-const port = 8000;
+const port = 53100;
 
 // Daftar metode dan skrip terkait
 const scripts = {
