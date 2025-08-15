@@ -8,7 +8,7 @@ const port = 49152;
 const scripts = {
     tls: 'TLS-PRV.js',
     https: 'HTTPS2.js',  // Menambahkan metode 'aot' dengan skrip 'AOT.js'
-    bypass: 'BYPASS2.js',
+    str: 'storm.js',
     silit: 'TLS-SILIT.js'
 };
 
@@ -30,7 +30,7 @@ app.get('/api', (req, res) => {
         console.log(`Host: ${host}, Time: ${time}, Port: ${portNumber}`);
 
         // Menjalankan skrip dengan argumen host, time, dan tambahan parameter
-        const process = exec(`node ${scriptPath} ${host} ${time} 20 18 proxy.txt`, (error, stdout, stderr) => {
+        const process = exec(`node ${scriptPath} ${host} ${time} 5 5 proxy.txt`, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error executing script: ${error.message}`);
             }
